@@ -55,7 +55,7 @@ by C.H.Choi
      private static final String TAG = "MainActivity";
      private int count = 0;
 
-     // 모든 리소스들 사용을위해 아래와 같은 방법으로 작성합니다. (= findViewById(R.id)와 같음
+     // 모든 뷰와 리소스들 사용을위해 아래와 같은 방법으로 작성합니다. (= findViewById(R.id)와 같음)
      
      @BindView(R.id.textView)
      TextView textView;
@@ -82,7 +82,7 @@ by C.H.Choi
 
         ButterKnife.bind(this);
         
-        //아래는 버터나이프를 사용하지 않았을때의 코드입니다.
+        //아래는 Butterknife 라이브러리를 사용하지 않았을때의 코드입니다.
         //textView = findViewById(R.id.textView);
         //String str = getResources().getString(R.string.app_name);
         
